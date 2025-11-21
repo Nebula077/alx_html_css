@@ -1,0 +1,824 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    background-color: transparent;
+    padding: 20px 0;
+    position: relative;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav img {
+    height: 40px;
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #c355f5;
+}
+
+/* Hero Section - First Section */
+main > section:nth-child(1) {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.5) 100%), url('images/Object.png') center/cover no-repeat;
+    color: #fff;
+    padding: 120px 20px;
+    text-align: center;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+main > section:nth-child(1) h1 {
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+main > section:nth-child(1) span {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 15px;
+    display: inline-block;
+    opacity: 0.9;
+}
+
+main > section:nth-child(1) button {
+    background-color: #c355f5;
+    color: #fff;
+    border: none;
+    padding: 12px 40px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    letter-spacing: 1px;
+}
+
+main > section:nth-child(1) button:hover {
+    background-color: #b344e0;
+    transform: scale(1.05);
+}
+
+/* Learn From the Pros Section - Now inside hero background */
+main > section:nth-child(2) {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.7) 100%), url('images/Object.png') center/cover no-repeat;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+main > section:nth-child(2) h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    color: #fff;
+}
+
+main > section:nth-child(2) h2 span {
+    color: #c355f5;
+}
+
+main > section:nth-child(2) > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main > section:nth-child(2) > div > div {
+    text-align: center;
+    padding: 20px;
+}
+
+main > section:nth-child(2) img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+}
+
+main > section:nth-child(2) h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+main > section:nth-child(2) p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Testimonial Section */
+main > section:nth-child(3) {
+    background: linear-gradient(135deg, #c355f5 0%, #9c3dd0 100%);
+    color: #fff;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    max-width: 100%;
+}
+
+main > section:nth-child(3) > div:first-child {
+    flex: 0 0 auto;
+}
+
+main > section:nth-child(3) img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+}
+
+main > section:nth-child(3) > div:last-child {
+    flex: 1;
+    max-width: 500px;
+}
+
+main > section:nth-child(3) blockquote {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+main > section:nth-child(3) h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+main > section:nth-child(3) p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Popular Tutorials Section */
+main > section:nth-child(4) {
+    background-color: #f8f8f8;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+main > section:nth-child(4) > h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    color: #333;
+}
+
+main > section:nth-child(4) > h2::before {
+    content: 'Most ';
+}
+
+main > section:nth-child(4) > h2 span {
+    color: #c355f5;
+}
+
+main > section:nth-child(4) > section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tutorial-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tutorial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.tutorial-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.tutorial-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px 20px 10px 20px;
+    text-align: left;
+    color: #333;
+}
+
+.tutorial-card p {
+    font-size: 14px;
+    color: #666;
+    padding: 0 20px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.tutorial-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.tutorial-author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0;
+}
+
+.tutorial-author h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.tutorial-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 15px 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.tutorial-rating i {
+    color: #ffd700;
+    font-size: 12px;
+}
+
+.tutorial-duration {
+    font-size: 12px;
+    color: #999;
+    padding: 15px 20px;
+    text-align: right;
+}
+
+/* Free Membership Section */
+main > section:nth-child(5) {
+    background-color: #0f1419;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+main > section:nth-child(5) header h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    color: #fff;
+}
+
+main > section:nth-child(5) header h2::before {
+    content: 'Free ';
+    color: #c355f5;
+}
+
+main > section:nth-child(5) > section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+}
+
+.member {
+    text-align: center;
+    padding: 0;
+}
+
+.member img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+.member h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.member p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+main > section:nth-child(5) button {
+    background-color: #c355f5;
+    color: #fff;
+    border: none;
+    padding: 12px 40px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+main > section:nth-child(5) button:hover {
+    background-color: #b344e0;
+    transform: scale(1.05);
+}
+
+.membership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+}
+
+.membership-card {
+    text-align: center;
+}
+
+.membership-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.membership-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.membership-card p {
+    font-size: 14px;
+    line-height: 1.8;
+    opacity: 0.9;
+}
+
+/* FAQ Section */
+main > section:nth-child(6) {
+    background-color: #f8f8f8;
+    padding: 80px 20px;
+}
+
+main > section:nth-child(6) h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 80px;
+    text-align: center;
+    color: #333;
+}
+
+main > section:nth-child(6) > section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+}
+
+main > section:nth-child(6) > section > div.faq {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+main > section:nth-child(6) > section > div.faq:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    transform: translateY(-3px);
+}
+
+main > section:nth-child(6) h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+main > section:nth-child(6) p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer > section > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+}
+
+footer i {
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin: 0 10px;
+}
+
+footer i:hover {
+    color: #c355f5;
+}
+
+footer p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        gap: 20px;
+    }
+
+    main > section:nth-child(1) h1 {
+        font-size: 48px;
+    }
+
+    main > section:nth-child(1) {
+        padding: 80px 20px;
+        min-height: auto;
+    }
+
+    main > section:nth-child(2) h2,
+    main > section:nth-child(4) > h2,
+    main > section:nth-child(5) header h2,
+    main > section:nth-child(6) h2 {
+        font-size: 32px;
+    }
+
+    main > section:nth-child(3) {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    main > section:nth-child(3) > div:last-child {
+        max-width: 100%;
+    }
+
+    .tutorial-card h3,
+    .membership-card h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    main > section:nth-child(1) h1 {
+        font-size: 36px;
+    }
+
+    main > section:nth-child(1) span {
+        display: block;
+        margin: 5px 0;
+    }
+
+    main > section:nth-child(2) h2,
+    main > section:nth-child(4) > h2,
+    main > section:nth-child(5) header h2,
+    main > section:nth-child(6) h2 {
+        font-size: 24px;
+    }
+}
+
+/* Section title */
+.popular-tutorials {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.popular-tutorials h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.popular-tutorials h2 span {
+  color: #b171ff;   /* purple “popular” */
+}
+
+
+/* Grid Layout */
+.tutorial-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 0 20px;
+}
+
+
+/* Card Container */
+.tutorial-card {
+  background: #fff;
+  border-radius: 12px;
+  padding-bottom: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  text-align: left;
+  overflow: hidden;
+}
+
+
+/* Thumbnail Area */
+.thumbnail {
+  position: relative;
+}
+
+.thumbnail img:first-child {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+/* PLAY BUTTON centered over image */
+.play-btn {
+  position: absolute;
+  width: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Text Elements */
+.tutorial-card h3 {
+  font-size: 18px;
+  margin: 12px 15px 5px;
+}
+
+.tutorial-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 0 15px 15px;
+  line-height: 1.4;
+}
+
+
+/* Author */
+.author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 15px 8px;
+}
+
+.author img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.author span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+}
+
+
+/* Card Footer */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.stars {
+  color: #b171ff;
+  font-size: 16px;
+}
+
+.duration {
+  color: #999;
+  font-size: 14px;
+}
+@media (max-width: 1000px) {
+  .tutorial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .tutorial-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.navbar {
+  position: absolute;         /* sits on top of hero image */
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 10;
+}
+
+/* INNER FLEX CONTAINER */
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LEFT SIDE (LOGO + TEXT) */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  height: 32px;
+  width: auto;
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+/* RIGHT SIDE LINKS */
+.nav-right {
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+  margin-right: 10px;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.nav-right a:hover {
+  opacity: 0.7;
+}
+.faq {
+    flex: 1;
+    overflow-y: auto;
+}
+.member {
+    flex: 1;
+    overflow-y: auto;
+}
+.footer {
+    background-color: #061428; /* deep navy */
+    color: #ffffff;
+    padding: 40px 60px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+footer section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer > section > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+/* Left Logo Section */
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-left img {
+    width: 40px;
+    height: auto;
+}
+
+.footer-left span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Center Text */
+.footer-center {
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.8;
+    margin-top: 20px;
+}
+
+/* Social Icons Section */
+.footer-right {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-right i {
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer-right i:hover {
+    color: #c355f5;
+}

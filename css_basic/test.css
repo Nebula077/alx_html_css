@@ -1,0 +1,111 @@
+/* Section title */
+.popular-tutorials {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.popular-tutorials h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.popular-tutorials h2 span {
+  color: #b171ff;   /* purple “popular” */
+}
+
+
+/* Grid Layout */
+.tutorial-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 0 20px;
+}
+
+
+/* Card Container */
+.tutorial-card {
+  background: #fff;
+  border-radius: 12px;
+  padding-bottom: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  text-align: left;
+  overflow: hidden;
+}
+
+
+/* Thumbnail Area */
+.thumbnail {
+  position: relative;
+}
+
+.thumbnail img:first-child {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+/* PLAY BUTTON centered over image */
+.play-btn {
+  position: absolute;
+  width: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Text Elements */
+.tutorial-card h3 {
+  font-size: 18px;
+  margin: 12px 15px 5px;
+}
+
+.tutorial-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 0 15px 15px;
+  line-height: 1.4;
+}
+
+
+/* Author */
+.author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 15px 8px;
+}
+
+.author img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.author span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+}
+
+
+/* Card Footer */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.stars {
+  color: #b171ff;
+  font-size: 16px;
+}
+
+.duration {
+  color: #999;
+  font-size: 14px;
+}
