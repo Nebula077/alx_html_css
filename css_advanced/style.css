@@ -507,7 +507,6 @@ footer p {
     opacity: 0.8;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
         gap: 20px;
@@ -574,7 +573,6 @@ footer p {
     }
 }
 
-/* Section title */
 .popular-tutorials {
   text-align: center;
   padding: 40px 0;
@@ -590,8 +588,6 @@ footer p {
   color: #b171ff;   /* purple “popular” */
 }
 
-
-/* Grid Layout */
 .tutorial-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -599,8 +595,6 @@ footer p {
   padding: 0 20px;
 }
 
-
-/* Card Container */
 .tutorial-card {
   background: #fff;
   border-radius: 12px;
@@ -610,8 +604,6 @@ footer p {
   overflow: hidden;
 }
 
-
-/* Thumbnail Area */
 .thumbnail {
   position: relative;
 }
@@ -623,7 +615,6 @@ footer p {
   border-radius: 12px 12px 0 0;
 }
 
-/* PLAY BUTTON centered over image */
 .play-btn {
   position: absolute;
   width: 60px;
@@ -632,8 +623,6 @@ footer p {
   transform: translate(-50%, -50%);
 }
 
-
-/* Text Elements */
 .tutorial-card h3 {
   font-size: 18px;
   margin: 12px 15px 5px;
@@ -646,8 +635,6 @@ footer p {
   line-height: 1.4;
 }
 
-
-/* Author */
 .author {
   display: flex;
   align-items: center;
@@ -667,8 +654,6 @@ footer p {
   color: #444;
 }
 
-
-/* Card Footer */
 .card-footer {
   display: flex;
   justify-content: space-between;
@@ -704,7 +689,6 @@ footer p {
   z-index: 10;
 }
 
-/* INNER FLEX CONTAINER */
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -714,7 +698,6 @@ footer p {
   align-items: center;
 }
 
-/* LEFT SIDE (LOGO + TEXT) */
 .nav-left {
   display: flex;
   align-items: center;
@@ -732,7 +715,6 @@ footer p {
   color: white;
 }
 
-/* RIGHT SIDE LINKS */
 .nav-right {
   display: flex;
   align-items: flex-end;
@@ -780,7 +762,6 @@ footer > section > div {
     margin-bottom: 20px;
 }
 
-/* Left Logo Section */
 .footer-left {
     display: flex;
     align-items: center;
@@ -797,7 +778,6 @@ footer > section > div {
     font-weight: 600;
 }
 
-/* Center Text */
 .footer-center {
     flex: 1;
     text-align: center;
@@ -806,7 +786,6 @@ footer > section > div {
     margin-top: 20px;
 }
 
-/* Social Icons Section */
 .footer-right {
     display: flex;
     gap: 15px;
