@@ -53,13 +53,22 @@ nav ul li a:hover {
     color: #c355f5;
 }
 
-/* Hero Section - First Section */
-main > section:nth-child(1) {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.5) 100%), url('images/Object.png') center/cover no-repeat;
+/* Hero wrapper: single background for hero + "Learn from the pros" area */
+.hero {
+    background: linear-gradient(135deg, rgba(10, 12, 20, 0.45) 0%, rgba(10, 12, 20, 0.65) 100%), url('images/Object.png') center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
     color: #fff;
-    padding: 120px 20px;
+    /* ensure hero background extends to include the instructor row */
+    padding-bottom: 140px;
+}
+
+/* Hero Section - first inner section (content sits on top of .hero background) */
+main > section:nth-child(1) {
+    color: #fff;
+    padding: 140px 20px 40px; /* more top padding for big hero headline */
     text-align: center;
-    min-height: 600px;
+    min-height: 520px; /* taller hero so headline sits high */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,10 +115,22 @@ main > section:nth-child(1) button:hover {
 }
 
 /* Learn From the Pros Section - Now inside hero background */
+/* Learn From the Pros section (sits inside the .hero wrapper so background is shared) */
 main > section:nth-child(2) {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.7) 100%), url('images/Object.png') center/cover no-repeat;
-    padding: 80px 20px;
+    padding: 40px 20px 0; /* reduce top padding so cards sit closer to hero bottom */
     text-align: center;
+    margin-top: -80px; /* lift section up so avatars overlap into hero background */
+}
+
+/* Make instructor grid fixed 4 columns on wide screens to match design alignment */
+@media (min-width: 1000px) {
+    main > section:nth-child(2) > div {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
 
 main > section:nth-child(2) h2 {
@@ -157,8 +178,8 @@ main > section:nth-child(2) p {
     color: rgba(255, 255, 255, 0.8);
 }
 
-/* Testimonial Section */
-main > section:nth-child(3) {
+/* Testimonial Section (class-based) */
+.testimonial {
     background: linear-gradient(135deg, #c355f5 0%, #9c3dd0 100%);
     color: #fff;
     padding: 80px 20px;
@@ -169,11 +190,11 @@ main > section:nth-child(3) {
     max-width: 100%;
 }
 
-main > section:nth-child(3) > div:first-child {
+.testimonial > div:first-child {
     flex: 0 0 auto;
 }
 
-main > section:nth-child(3) img {
+.testimonial img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -181,25 +202,25 @@ main > section:nth-child(3) img {
     border: 5px solid rgba(255, 255, 255, 0.3);
 }
 
-main > section:nth-child(3) > div:last-child {
+.testimonial > div:last-child {
     flex: 1;
     max-width: 500px;
 }
 
-main > section:nth-child(3) blockquote {
+.testimonial blockquote {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 20px;
     line-height: 1.8;
 }
 
-main > section:nth-child(3) h3 {
+.testimonial h3 {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 5px;
 }
 
-main > section:nth-child(3) p {
+.testimonial p {
     font-size: 14px;
     opacity: 0.9;
 }
@@ -311,27 +332,27 @@ main > section:nth-child(4) > section {
     text-align: right;
 }
 
-/* Free Membership Section */
-main > section:nth-child(5) {
+/* Free / Membership Section (class-based) */
+.membership-section {
     background-color: #0f1419;
     color: #fff;
     padding: 80px 20px;
     text-align: center;
 }
 
-main > section:nth-child(5) header h2 {
+.membership-section header h2 {
     font-size: 42px;
     font-weight: 700;
     margin-bottom: 60px;
     color: #fff;
 }
 
-main > section:nth-child(5) header h2::before {
+.membership-section header h2::before {
     content: 'Free ';
     color: #c355f5;
 }
 
-main > section:nth-child(5) > section {
+.membership-section > .membership-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
@@ -364,7 +385,7 @@ main > section:nth-child(5) > section {
     color: rgba(255, 255, 255, 0.8);
 }
 
-main > section:nth-child(5) button {
+.membership-section button {
     background-color: #c355f5;
     color: #fff;
     border: none;
@@ -380,7 +401,7 @@ main > section:nth-child(5) button {
     margin-top: 20px;
 }
 
-main > section:nth-child(5) button:hover {
+.membership-section button:hover {
     background-color: #b344e0;
     transform: scale(1.05);
 }
@@ -416,13 +437,13 @@ main > section:nth-child(5) button:hover {
     opacity: 0.9;
 }
 
-/* FAQ Section */
-main > section:nth-child(6) {
+/* FAQ Section (class-based) */
+.faq-section {
     background-color: #f8f8f8;
     padding: 80px 20px;
 }
 
-main > section:nth-child(6) h2 {
+.faq-section h2 {
     font-size: 42px;
     font-weight: 700;
     margin-bottom: 80px;
@@ -430,7 +451,7 @@ main > section:nth-child(6) h2 {
     color: #333;
 }
 
-main > section:nth-child(6) > section {
+.faq-section > #faq {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 50px;
@@ -438,7 +459,7 @@ main > section:nth-child(6) > section {
     margin: 0 auto 50px auto;
 }
 
-main > section:nth-child(6) > section > div.faq {
+.faq-section > #faq > div.faq {
     background-color: #fff;
     padding: 40px 30px;
     border-radius: 10px;
@@ -446,19 +467,19 @@ main > section:nth-child(6) > section > div.faq {
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-main > section:nth-child(6) > section > div.faq:hover {
+.faq-section > #faq > div.faq:hover {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
     transform: translateY(-3px);
 }
 
-main > section:nth-child(6) h3 {
+.faq-section h3 {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 20px;
     color: #333;
 }
 
-main > section:nth-child(6) p {
+.faq-section p {
     font-size: 14px;
     color: #666;
     line-height: 1.8;
