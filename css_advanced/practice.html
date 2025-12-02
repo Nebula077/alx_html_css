@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="practice.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">This is a heading</h1>
+    <form action="/submit-form" method="post">
+        <label for="email">
+            Email:
+            <input type="email" id="email" name="email" required>
+        </label>
+        <label for="age">
+            Age:
+            <input type="number" id="age" name="age" min="1" max="120" required>
+        </label>
+        <label for="feedback">
+            Feedback:
+            <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea>
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+        }
+        label {
+            margin-bottom: 15px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</body>
+</html>
