@@ -1,0 +1,43 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    align-items: center;
+}
+
+.what-we-do {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.offers {
+    flex: 1;
+    flex-direction: row;
+    overflow-y: auto;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.icon {
+    display: inline-block;
+    width: 200px;
+    margin: 15px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.icon img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.icon:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
